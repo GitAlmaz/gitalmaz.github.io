@@ -32,7 +32,7 @@ export default {
 		...mapMutations('chat', ['setOpponentName', 'setMessages', 'addHistory']),
 		changeChat(e) {
 			const items = [...document.querySelectorAll('.user-list__item')]
-			const name = e.target.dataset.value
+			const name = e.currentTarget.dataset.value
 			items.map(item => {
 				item.dataset.value === name ? item.classList.add('is-active') : item.classList.remove('is-active')
 			})
