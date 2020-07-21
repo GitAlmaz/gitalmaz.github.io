@@ -1,0 +1,39 @@
+.input-group {
+	width: 100%;
+	position: relative;
+
+	input {
+		width: 100%;
+		background: transparentize($cl-bg, .5);
+		padding: 10px 20px;
+		border-radius: 5px;
+		font-size: 18px;
+		transition: $transition-primary;
+		box-shadow: 0px 5px 15px -5px rgba(0,0,0,.3);
+		backdrop-filter: blur(10px);
+		&:focus {
+			box-shadow: 0px 5px 15px -5px rgba(0,0,0,.3);
+		}
+		&:focus,
+		&:not(:placeholder-shown) {
+			& + label {
+				transform: translateY(-35px) translateX(-20px);
+				opacity: 0.5;
+				font-size: 14px;
+			}
+		}
+	}
+	label {
+		position: absolute;
+		top: 10px;
+		left: 20px;
+		font-size: 18px;
+		transition: $transition-primary;
+		cursor: text;
+	}
+	&.error {
+		label {
+			color: $cl-red;
+		}
+	}
+}

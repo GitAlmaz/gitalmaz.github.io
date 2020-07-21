@@ -1,0 +1,63 @@
+.chat-page {
+	background-color: #efefef;
+	background-image: url('~@/assets/img/bg-login.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	.container {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 90px;
+		padding-bottom: 90px;
+		@include media($small) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+	h1 {
+		margin-bottom: 50px;
+		@include media($small) {
+			margin-bottom: 30px;
+			font-size: 26px;
+		}
+	}
+	&__line {
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		@include media($smd) {
+			flex-wrap: wrap;
+		}
+	}
+	&__list {
+		margin-right: 40px;
+		@include media($smd) {
+			width: 100%;
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			margin-right: 0;
+			.user-list {
+				margin-right: 20px;
+			}
+		}
+		.user-list {
+			margin-bottom: 20px;
+		}
+	}
+	&__chat {
+		height: 550px;
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		.user-list {
+			margin-right: 20px;
+		}
+		@include media($small) {
+			height: auto;
+		}
+	}
+}
