@@ -1,0 +1,51 @@
+.btn {
+	font-family: $font-primary-regular;
+	font-weight: normal;
+	font-style: normal;
+	outline: none !important;
+	transition: color $transition-primary;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	border: none;
+	cursor: pointer;
+	&--main {
+		color: #333;
+		border-radius: 5px;
+		padding: 5px 15px;
+		background: $cl-bg;
+		box-shadow: $shadow;
+		transition: $transition-primary;
+		&:hover {
+			background: lighten($cl-bg, 3%);
+		}
+		&:active {
+			background: darken($cl-bg, 3%);
+		}
+	}
+	&--green {
+		color: #fff;
+		border-radius: 5px;
+		padding: 5px 15px;
+		background: $cl-green;
+		transition: $transition-primary;
+		&:hover {
+			background: lighten($cl-green, 3%);
+		}
+		&:active {
+			background: darken($cl-green, 3%);
+		}
+	}
+	&--red {
+		color: #fff;
+		border-radius: 5px;
+		padding: 5px 15px;
+		background: $cl-red;
+		transition: $transition-primary;
+		&:hover {
+			background: lighten($cl-red, 3%);
+		}
+		&:active {
+			background: darken($cl-red, 3%);
+		}
+	}
+}

@@ -1,0 +1,21 @@
+//* * *
+//* -> MODULES START <- *//
+@import 'modules/variables';
+@import 'modules/mixins';
+@import 'modules/layout';
+@import 'modules/fonts';
+@import 'modules/hacks';
+//* -> MODULES END <- *//
+//* *
+// //* -> BLOCKS START <- *//
+@import 'blocks/header';
+
+// //* -> COMPONENTS END <- *//
+@import 'components/user-list';
+@import 'components/chat-board';
+@import 'components/UI/buttons';
+@import 'components/UI/input-group';
+// //* *
+// //* -> PAGES START <- *//
+@import 'pages/login-page';
+@import 'pages/chat-page';
